@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heymans Jeroen</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:rgba(52,51, 48, 0.3);">
+    <!--Navigatiebalk-->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <button class="navbar-toggler" style="width: 15%;" type="button" data-toggle="collapse" data-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Toggle
+            navigation" onclick="hamburger(), hamburgerAni(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <div class="d-block d-lg-none">
+            <button id="modalBtn" class="btn" onclick="modal()">Wie ben ik?</button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="menu">Home</a>
+                </li>
+                <li class=" nav-item">
+                </li>
+                <li class=" nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#" id="menu" onclick="modal()">Wie ben ik?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Modal-->
+    <div id="wieBenIk" class="modal">
+        <div class="modal-content w-75" style="background: rgba(141, 141, 141, 0.8)">
+            <h1><em>Contact</em><span class="closeBtn" onclick="modalClose()">&times;</span></h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4" style="padding-top: 4rem;">
+                        <form id="contact-form" name="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <i class="fa fa-user fa-2x mb-3 mt-3"></i>
+                                        <input type="text" id="name" name="name" class="form-control" value="naam">
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <i class="fa fa-envelope fa-2x mb-3 mt-3"></i>
+                                        <input type="text" id="email" name="email" class="form-control" value="email">
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="row mt-4 mb-4">
+        
+                                <div class="col-md-12">
+        
+                                    <div class="md-form">
+                                        <i class="fa fa-comment fa-2x mb-3 mt-3"></i>
+                                        <textarea type="text" id="message" name="message" rows="5"
+                                            class="form-control md-textarea">je vraag</textarea>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="row">
+                            <div class="col-7" style="text-align: left;">
+        
+                                <p>
+                                    <h2>Heymans Jeroen</h2>
+                                </p>
+                                <p>
+                                    <h4>Lemmeken 13</h4>
+                                </p>
+                                <p>
+                                    <h4>1840 Malderen</h4>
+                                </p>
+                            </div>
+                            <div class="col-5" style="text-align: left;">
+                                <iframe height="100%" src="https://www.youtube-nocookie.com/embed/WyaBpEBVQwc?controls=0" frameborder="0" 
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="95%"></iframe>
+                                <!--Kan de speler-controls en avatar niet verbergen evenals de volgende video-suggesties.  Dit wegens een wijziging
+                                in de gebruiksvoorwaarden van YT ingaande op 25 september 2018-->
+                            </div>
+                            <div class="col-6" style="padding-top: 6rem; text-align: center;">
+                                <h3>Contacteer mij</h3>
+                                <hr style="height: 3px; background: #bf211e">
+                                <a href="mailto:heymansjeroen@proximus.be" style="color: #eeba0b;"><i class="fa fa-envelope fa-4x"></i></a>
+                            </div>
+        
+                            <div class="col-6" style="padding-top: 4%">
+        
+                                <p style="text-align: center;"><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d313.7578728140555!2d4.242176012716444!3d51.014985279557145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3eb56c2d40dff%3A0x6fc769f9a2c8eb81!2sLemmeken%2013%2C%201840%20Londerzeel!5e0!3m2!1snl!2sbe!4v1585215461959!5m2!1snl!2sbe"
+                                        width="95%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                                        aria-hidden="false" tabindex="0"></iframe></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div>         
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="padding-top: 4.5rem;">
+                    Verwezelijkingen
+                </h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-7">
+                <div class="row">
+                    <div class="col-6 col-lg-8">
+                        <h2>Profiel</h2>
+                        <p><em>Op zoek naar een nieuw uitdagende job met doorgroeimogelijkheden om een nieuwe positieve
+                                wending te geven aan mijn
+                                beroepscarrière. Ik ben leergierig en bezit daarnaast ook een degelijke hoeveelheid
+                                ambitie om mijn opleiding graduaat
+                                Informatica in avondonderwijs te voltooien.
+                            </em></p>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <img src="MEDIA/20190701_191234.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-12" id="PROJ" style="margin-bottom: 15%;">
+                        <h2>Realisaties</h2>
+                        <div class="row">
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/abstract-business-code-coding-276452.jpg" alt=""
+                                                style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/modern-office-building-325223.jpg" alt=""
+                                                style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/coding_1.jpg" alt="" style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/coding_2.jpg" alt="" style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/infrastructuur.jpg" alt="" style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/turned-on-monitor-keyboard-and-items-on-desk-1714341.jpg"
+                                                alt="" style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/datacenter.jpg" alt="" style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/modern-office-building-325223.jpg" alt=""
+                                                style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 d-none d-lg-block mb-2">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="MEDIA/abstract-business-code-coding-276452.jpg" alt=""
+                                                style="width: 100%;">
+                                            <h5>Project</h5>
+                                            <p>Voorbeeldtekst</p>
+                                            <button type="button" class="btn btn-dark w-100" id="btn_Proj">Meer
+                                                Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+                <h2 style="margin-bottom: 1rem;" id="CV">C.V.</h2>
+                <button class="accordeon">Ervaring</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordeon">Vaardigheden</button>
+                <div class="panel">
+                    <table>
+                        <th>
+                            <h4>
+                                Persoonlijkheid
+                            </h4>
+                        </th>
+                        <th style="text-align: right; width: 100%;">
+                            <h4>
+                                Talen
+                            </h4>
+                        </th>
+                        <tr>
+                            <td>
+                                Hulpvaardig
+                            </td>
+                            <td style="text-align: right; width: 100%;">
+                                Nederlands
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                leergierig
+                            </td>
+                            <td style="text-align: right; width: 100%;">
+                                Engels
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ambitieus
+                            </td>
+                            <td style="text-align: right; width: 100%;">
+                                Frans
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Communicatief
+                            </td>
+                            <td style="text-align: right; width: 100%;">
+                                Duits
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <button class="accordeon">Opleidingen</button>
+                <div class="panel">
+                    <table>
+                        <table>
+                            <tr>
+                                <td>
+                                    09/2019
+                                </td>
+                                <td style="padding-left: 1rem;">
+                                    <h4>Graduaat programmeren (Avondonderwijs)</h4>
+                                    <p><em>Thomas More, Sint-Katelijne-Waver</em></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    02/2018
+                                </td>
+                                <td style="padding-left: 1rem;">
+                                    <h4> Informatica (modulaire opleiding volwassenenonderwijs)</h4>
+                                    <p><em>CVO Antwerpen, Hoboken</em></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </table>
+                </div>
+                <div class="row mt-4" style="margin-bottom: 2rem;">
+                    <div class="col-12">
+                        <h2 style="margin-bottom: 1rem;" id="CV">PC-vaardigheden</h2>
+                        <div id="carousel" class="carousel slide w-50" data-ride="carousel"
+                            style="margin-left: auto; margin-right: auto;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="ICON/Bootstrap.png" alt="Bootstrap">
+                                    <div class="carousel-caption">
+                                        <h3>Bootstrap</h3>
+                                        <p>Basiskennis Responsive Design</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="ICON/CSharp.png" alt="C#">
+                                    <div class="carousel-caption">
+                                        <h3>C #</h3>
+                                        <p>Basiskennis .NET C#</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="ICON/HTML.png" alt="HTML">
+                                    <div class="carousel-caption">
+                                        <h3>HTML</h3>
+                                        <p>Kennis van HTML/CSS</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="ICON/JAVA.png" alt="JAVA">
+                                    <div class="carousel-caption">
+                                        <h3>JAVA</h3>
+                                        <p>Basiskennis JAVA</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="ICON/SQL.png" alt="SQL">
+                                    <div class="carousel-caption">
+                                        <h3>SQL</h3>
+                                        <p>Basiskennis SQL en databankbeheer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" ;">
+        <div class="row" id="dreamFooter">
+            <div class="col-6 col-lg-4" id="foot_left">
+                <div class="row">
+                    <div class="col-4">
+                        <p></p>
+                        <p>Copyright: </p>
+                    </div>
+                    <div class="col-8">
+                        <strong>
+                            <p></p>
+                        </strong>
+                        <strong>
+                            <p>Heymans Jeroen</p>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-8 mb-3" id="foot_right">
+                <h3>Links</h3>
+                <div class="row">
+                    <div class="col-4" id="iconSocial">
+                        <a href="https://www.facebook.com/jeroen.heymans.80" target="_blank"><img
+                                src="ICON/icons8-facebook-48.png" alt=""></a>
+                    </div>
+                    <div class="col-4" id="iconSocial">
+                        <a href="http://www.linkedin.com/in/jeroen-heymans-a05295179" target="_blank"><img
+                                src="ICON/icons8-linkedin-48.png" alt=""></a>
+                    </div>
+                    <div class="col-4" id="iconSocial">
+                        <a href="https://twitter.com/Jeroen290580" target="_blank"><img src="ICON/icons8-twitter-48.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Java Script-->
+    <script>
+        function hamburger() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function hamburgerAni(x) {
+            x.classList.toggle("change");
+        }
+
+        function modal() {
+            var modal = document.getElementById('wieBenIk');
+            var modalBtn = document.getElementById('modalBtn');
+            var closeBtn = document.getElementById('kruisje');
+            modal.style.display = 'block';
+        }
+
+        function modalClose() {
+            var modal = document.getElementById('wieBenIk');
+            var modalBtn = document.getElementById('modalBtn');
+            var closeBtn = document.getElementById('kruisje');
+            modal.style.display = 'none';
+        }
+
+
+        var acc = document.getElementsByClassName("accordeon");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

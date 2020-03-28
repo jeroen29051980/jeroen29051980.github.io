@@ -1,0 +1,257 @@
+/* Navigatie */
+.navbar {
+    background-color: rgba(191, 33, 30, 0.8);
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* Geanimeerd hamburger menu (gevonden op W3-schools) */
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #eeba0b;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 3px);
+    transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+/* Fade out the second bar */
+
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* =========================================================== */
+
+#menu {
+    text-decoration: none;
+    color: #eeba0b;
+    z-index: 100;
+}
+
+#menu:hover {
+    color:rgba(51,24, 50, 0.7);
+}
+
+.btn:enabled {
+    background: transparent;
+    padding: 0.7em;
+    color: #eeba0b;
+}
+
+.btn:hover {
+    background: #eeba0b;
+}
+
+.modal {
+    display: inline;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background: rgba(191, 33, 30, 0.8);
+    position: relative;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 90%;
+    overflow-x: hidden;
+    color: #eeba0b;
+}
+
+.closeBtn {
+    color: #eeba0b;
+    float: right;
+}
+
+.closeBtn:hover {
+    color: #bf211e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ======================================= */
+/* Jumbotron Styling */
+.jumbotron {
+    background-image: url(../MEDIA/yellow-bokeh-photo-949587.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.btn_Extra {
+    background: transparent;
+    padding: 2em;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    color: #ffffff;
+    border-radius: 20px;
+    border-style: solid;
+    text-decoration: none;
+}
+
+.btn_Extra:hover {
+    background: transparent;
+    padding: 2em;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    color: red;
+    border-radius: 20px;
+    border-style: solid;
+    text-decoration: none;
+}
+
+#mainPage {
+    text-align: center;
+    top: 5vw;
+    color: white;
+}
+
+#mainPage h1 {
+    font-size: 6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mainPage h2 {
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ======================================= */
+/* Footer Styling */
+
+.footer {
+    position: relative ;
+    bottom: 0;
+    z-index: 1;
+}
+
+#dreamFooter{
+    background-color: rgba(51,24, 50, 0.7);
+}
+
+#foot_left {
+    font-size: 0.7rem;
+}
+
+#foot_right {
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+#iconSocial img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ======================================= */
+/* Accordeon Styling */
+
+.accordeon {
+    background-color: #3c1518;
+    color: #eeba0b;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5rem;
+}
+
+.active, .accordeon:hover {
+    background-color: rgba(191, 33, 30, 0.8);
+}
+
+
+.panel {
+    padding: 0 18px;
+    background: rgba(191, 33, 30, 0.2); ;
+    display: none;
+    overflow: hidden;
+}
+
+.accordeon:after {
+    content: '\2630';
+    font-size: 1rem;
+    color: #eeba0b;
+    float: right;
+    margin-left: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .active:after {
+    content: "\2715";
+  }
+/* ======================================= */
+
+.carousel-item {
+    background: transparent;
+    color: transparent;
+}
+
+.carousel-item h3 {
+    color: #bf211e;
+    font-size: 2.3rem;
+}
+
+.carousel-item p {
+    color: #bf211e;
+    font-size: 1.5rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+#btn_Proj {
+    background-color: #3c1518;
+    outline: transparent;
+}
+
+#btn_Proj:hover {
+    background-color: #bf211e;
+    outline: transparent;
+    color: #eeba0b;
+}
+
+.card-body {
+    background-color: rgba(60,21, 24, 0.5);
+}
+
