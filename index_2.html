@@ -129,11 +129,11 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
-                  <h4>Loopbaan</h4>
-                  <p>Overzicht van professionele loopbaan tot op heden</p>
+                  <h4>Career</h4>
+                  <p>Overview of professional career</p>
                   <button type="button" class="btn bg-primary text-white w-100"
                     onclick="openModal('btn_ervaring')" id="ervaring">
-                    Meer Info
+                    More ...
                   </button>
                 </div>
               </div>
@@ -143,13 +143,13 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
-                  <h4>Opleiding</h4>
+                  <h4>Education</h4>
                   <p>
-                    Basisvorming en voortgezette opleidingen
+                    Base and higher education
                   </p>
                   <button type="button" class="btn bg-primary text-white w-100"
                     onclick="openModal('btn_opleiding')">
-                    Meer Info
+                    More ...
                   </button>
                 </div>
               </div>
@@ -159,11 +159,11 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
-                  <h4>Vaardigheden</h4>
-                  <p>Een overzicht van alle verworven vaardigheden</p>
+                  <h4>Skills</h4>
+                  <p>Overview of gathered skills</p>
                   <button type="button" class="btn bg-primary text-white w-100"
                     onclick="openModal('btn_vaardigheden')">
-                    Meer Info
+                    More ...
                   </button>
                 </div>
               </div>
@@ -173,11 +173,11 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
-                  <h4>Interesses</h4>
-                  <p>Interesse buiten het werkveld</p>
+                  <h4>Interests</h4>
+                  <p>Extra interests outside professional context</p>
                   <button type="button" class="btn bg-primary text-white w-100"
                     onclick="openModal('btn_interest')">
-                    Meer Info
+                    More ...
                   </button>
                 </div>
               </div>
@@ -187,11 +187,11 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
-                  <h4>Projecten</h4>
-                  <p>Gerealiseerde projecten</p>
+                  <h4>Projects</h4>
+                  <p>Deployed projects</p>
                   <button type="button" class="btn bg-primary text-white w-100" disabled
                     id="btn_Proj">
-                    Meer Info
+                    More ...
                   </button>
                 </div>
               </div>
@@ -201,11 +201,11 @@
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
-                  <h4>Over mij</h4>
-                  <p>Contactinformatie en profieltekst</p>
+                  <h4>About Me</h4>
+                  <p>Contactinfo and Profiletext</p>
                   <button type="button" class="btn bg-primary text-white w-100"
                     onclick="openModal('btn_contact')">
-                    Meer Info
+                    More ...
                   </button>
                 </div>
               </div>
@@ -593,7 +593,7 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
           <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
             <div class="my-auto">
-              <h2 class="mb-5">Profiel</h2>
+              <h2 class="mb-5">Profile</h2>
               <p>
                 Ambitious, helpful and eager to learn are words that describe me well. I have
                 already have a basic knowledge of a number of programming languages ​​and different
@@ -607,16 +607,17 @@
               </p>
             </div>
             <div class="my-auto">
-              <h2 class="mb-5">Contactgegevens</h2>
-              <h3>
-                <div class="subheading mb-3">
-                  0479/61.24.86 ·
-                  <a href="mailto:heymansjeroen@proximus.be">heymansjeroen@proximus.be</a>
-                </div>
-              </h3>
-              <h3>
-                Placeholder
-              </h3>
+              <h2 class="mb-5">Get in touch</h2>
+              <form action="https://formsubmit.co/heymansjeroen@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+              </form>
+
             </div>
           </section>
         </section>
