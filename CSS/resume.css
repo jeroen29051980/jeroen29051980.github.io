@@ -110,6 +110,10 @@ h2 {
         display: block;
     }
 
+    #sideNav .navbar-collapse .navbar-nav .nav-item:hover {
+        cursor: pointer;
+    }
+
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
     }
