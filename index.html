@@ -63,7 +63,7 @@
           <a class="nav-link js-scroll-trigger" onclick="openModal('btn_interest')">Interesses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger disabled" href="">Projecten</a>
+          <a class="nav-link js-scroll-trigger" onclick="openModal('btn_Proj')">Projecten</a>
         </li>
         <li class=" nav-item">
           <a class="nav-link js-scroll-trigger" onclick="openModal('btn_contact')">Over mij</a>
@@ -182,8 +182,8 @@
                 <div class="card-body">
                   <h4>Projecten</h4>
                   <p>Gerealiseerde projecten</p>
-                  <button type="button" class="btn bg-primary text-white w-100" disabled
-                    id="btn_Proj">
+                  <button type="button" class="btn bg-primary text-white w-100"
+                    onclick="openModal('btn_Proj')">
                     Meer Info
                   </button>
                 </div>
@@ -636,6 +636,107 @@
     </div>
     </div>
 
+    <div id="btn_Proj" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="my-auto">
+          <h2 class="mb-5">Projecten</h2>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-4 mb-2">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Project 1: Nextcloud</h4>
+                  <p>DEVOPS: Nextcloud via Ansible en Terraform</p>
+                  <button type="button" class="btn bg-primary text-white w-100" disabled
+                    onclick="openModal('btn_nextcloud')" id="ervaring">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Project 2: Vaultwarden</h4>
+                  <p>
+                    Open-source project compatibel met Bitwarden
+                  </p>
+                  <button type="button" class="btn bg-primary text-white w-100" disabled
+                    onclick="openModal('btn_vaultwarden')">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Project 3: Zabbix</h4>
+                  <p>Zabbix-server op thuisnetwerk.
+                    Opgezet voor testing.
+                  </p>
+                  <button type="button" class="btn bg-primary text-white w-100" disabled
+                    onclick="openModal('btn_zabbix')">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Project 4</h4>
+                  <p></p>
+                  <button type="button" class="btn bg-primary text-white w-100" disabled
+                    onclick="openModal('btn_interest')">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Project 5</h4>
+                  <p></p>
+                  <button type="button" class="btn bg-primary text-white w-100" disabled
+                    id="btn_Proj">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4>Project 6</h4>
+                  <p></p>
+                  <button type="button" class="btn bg-primary text-white w-100" disabled
+                    onclick="openModal('btn_interest')">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="VENDOR/jquery/jquery.min.js"></script>
     <script src="VENDOR/bootstrap/js/bootstrap.bundle.min.js"></script>
